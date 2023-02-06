@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is My Test Web Page</title>
+</head>
+<body>
+    <!--<h1> defines the most important This Is Heading . <h6> defines the least important This Is Heading . 
+        Use HTML This Is Heading s for This Is Heading s only. Don't use This Is Heading s to make text BIG or bold-->
+    <h1>
+        This is My Test Web Page
+    </h1>
+    <h1>This Is Heading  1</h1>
+    <h2>This Is Heading  2</h2>
+    <h3>This Is Heading  3</h3>
+    <h4>This Is Heading  4</h4>
+    <h5>This Is Heading  5</h5>
+    <h6>This Is Heading  6</h6>
+
+    <!-- for create an break line use <hr> tag -->
+    <hr>
+    <!-- for create an paragraph you can use <p> </p>-->
+    <h1> <p> This Is two Paragraph </p> </h1>
+    <p>
+        class square:
+        # this is the constructor for the square class
+        # we create a magic Method : __name__
+        # this is a magic method
+        def __init__(self, x1, y1, x2, y2):
+            self.x1 = x1
+            self.y1 = y1
+            self.x2 = x2
+            self.y2 = y2
+        # i changed default __str__ magic method
+        # please comment this and then run and see output
+        # then remove commented lines and run and see output
+
+    </p>
+    <hr>
+    <!-- when use paragraph tag  If you write the entries in other lines, everything will be written one after the other-->
+    <p>
+        class square:
+        # this is the constructor for the square class
+        # we create a magic Method : __name__
+        # this is a magic method
+        def __init__(self, x1, y1, x2, y2):
+            self.x1 = x1
+            self.y1 = y1
+            self.x2 = x2
+            self.y2 = y2
+        # i changed default __str__ magic method
+        # please comment this and then run and see output
+        # then remove commented lines and run and see output
+    </p>
+    <hr>
+    <h1>
+        First Sample
+    </h1>
+    <!--If you want the posts to be displayed as they are, use pre-->
+    This code is a Sample to Create a class and use Magic Method in python 
+    <pre>
+        class square:
+        # this is the constructor for the square class
+        # we create a magic Method : __name__
+        # this is a magic method
+        def __init__(self, x1, y1, x2, y2):
+            self.x1 = x1
+            self.y1 = y1
+            self.x2 = x2
+            self.y2 = y2
+        # i changed default __str__ magic method
+        # please comment this and then run and see output
+        # then remove commented lines and run and see output
+    
+        def __str__(self):
+            return (f"{self.x1}, {self.y1}, {self.x2},{self.y2}")
+    
+        def __eq__(self, other):
+            return self.x1 == other.x1 and self.y1 == other.y1 and self.x2 == other.x2 and self.y2 == other.y2
+    
+        def __gt__(self, other):
+            return self.x1 > other.x1 and self.y1 > other.y1 and self.x2 > other.x2 and self.y2 > other.y2
+    
+        def __lt__(self, other):
+            return self.x1 < other.x1 and self.y1 < other.y1 and self.x2 < other.x2 and self.y2 < other.y2
+    
+    
+        # __str__
+        square1 = square(10, 10, 20, 20)
+        square2 = square(10, 10, 20, 20)
+        print(square1, "*", square2)
+        print("eq :", square1 == square2)
+        print('===================')
+        
+        square3 = square(30, 30, 40, 50)
+        square4 = square(10, 10, 20, 20)
+        print(square3, "*", square4)
+        print("gt :", square3 > square4)
+        print('===================')
+        
+        square5 = square(10, 10, 20, 20)
+        square6 = square(30, 30, 40, 50)
+        print(square5, "*", square6)
+        print("lt : ", square5 > square6)
+        print('===================')
+    
+    </pre>
+</body>
+</html>
